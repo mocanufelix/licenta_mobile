@@ -20,6 +20,7 @@ class MoistureDataService {
 
         MoistureData moistureData = MoistureData(
           (data["moisture"] as num).toDouble(),
+          DateTime.parse(data["time"]),
         );
 
         moistureDataList.add(moistureData);

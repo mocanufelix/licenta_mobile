@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: "/temperature-data",
+      initialRoute: "/humidity-data",
       routes: {
         "/temperature-data": (context) => const TemperatureDataPage(),
         "/humidity-data": (context) => const HumidityDataPage(),
