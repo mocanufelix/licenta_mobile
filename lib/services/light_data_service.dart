@@ -20,6 +20,7 @@ class LightDataService {
 
         LightData lightData = LightData(
           (data["light"] as num).toDouble(),
+          DateTime.parse(data["time"]),
         );
 
         lightDataList.add(lightData);
