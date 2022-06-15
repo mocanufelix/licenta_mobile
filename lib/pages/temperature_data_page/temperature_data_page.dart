@@ -167,7 +167,7 @@ class _TemperatureDataPageState extends State<TemperatureDataPage> {
                       formatter: (value) => DateFormat("kk:mm").format(value),
                     ),
                   ),
-                  'humidity': Variable(
+                  'celsius': Variable(
                     accessor: (Map map) => (map['celsius'] as num),
                     scale: LinearScale(
                       min: _getMinValue(temperatureDataList!),
