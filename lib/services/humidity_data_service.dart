@@ -20,6 +20,7 @@ class HumidityDataService {
 
         HumidityData humidityData = HumidityData(
           (data["humidity"] as num).toDouble(),
+          DateTime.parse(data["time"]),
         );
 
         humidityDataList.add(humidityData);
