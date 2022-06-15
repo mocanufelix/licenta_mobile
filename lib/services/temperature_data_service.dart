@@ -21,6 +21,7 @@ class TemperatureDataService {
         TemperatureData temperatureData = TemperatureData(
           (data["celsius"] as num).toDouble(),
           (data["fahrenheit"] as num).toDouble(),
+          DateTime.parse(data["time"]),
         );
 
         temperatureDataList.add(temperatureData);
